@@ -1,8 +1,8 @@
 ## These functions are designed to cache the inverse of a matrix. This is a demonstration of both
-## caching values that take a long time to computer and usage of the <<- operator. 
+## caching values that take a long time to compute and usage of the <<- operator. This is Programming
+## Assignment #2 for the Coursea Data Science course.
 
 ## makeCacheMatrix creates a special "matrix" object that can cache its inverse
-
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -19,8 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve computes the inverse of the special"matrix" returned by makeCacehMatrix. If 
 ## the inverse has already been calculated, and has not changed, the cached result 
-## is returned
-
+## is returned.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getinv()
